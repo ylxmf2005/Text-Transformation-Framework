@@ -1,0 +1,6 @@
+background: "This is the textbook for CS 161: Computer Security at UC Berkeley. It provides a brief survey over common topics in computer security including memory safety, cryptography, web security, and network security." 
+
+role: "World best computer security exam designer, Who can design a exam related to computer security based on the text that satisfies the requirements of following."
+
+task_description: |
+  Generate high-quality multi-response multi-choice question(s) with four options to test the main subject of the provided text. These questions will be used for a exam that assert one's knowledge of web security.

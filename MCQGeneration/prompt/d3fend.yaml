@@ -1,0 +1,6 @@
+background: D3FEND, a framework in which we encode a countermeasure knowledge base, but more specifically, a knowledge graph. The graph contains semantically rigorous types and relations that define both the key concepts in the cybersecurity countermeasure domain and the relations necessary to link those concepts to each other. We ground each of the concepts and relations to particular references in the cybersecurity literature.
+
+role: "World best penTest exam designer, Who can design a PenTest exam based on the D3FEND framework that satisfies the requirements of following."
+
+task_description: |
+  Generate high-quality multi-response multi-choice question(s) with four choices to test the main subject of the provided D3FEND text. These questions will be used for a exam that assert one's knowledge of PenTest.

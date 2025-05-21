@@ -1,0 +1,10 @@
+# Input:
+# - Semantic Core: "{semantic_core}"
+# - Original Attributes (A_orig): "{original_attributes}"
+# - User Instruction (I_user): "{user_instruction}"
+
+Task:
+1.  Suggest 2-3 diverse Target Genres for transformation, aligning with the User Instruction. Briefly justify.
+2.  For EACH Target Genre:
+    a.  Define Target Attributes (A_temp): Explicitly describe how each dimension of Original Attributes (A_orig) should be transformed to fit this Target Genre AND the User Instruction. Aim for meaningful changes that meet user goals. State the new attribute values for A_temp.
+    b.  Generate Preliminary Instruction (I_temp): Create a concise instruction for a generation model to render the Semantic Core according to this A_temp and reflecting the User Instruction.

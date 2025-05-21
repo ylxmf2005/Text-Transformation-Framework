@@ -1,0 +1,29 @@
+# Input:
+# - Original Text: "{original_text}"
+# - Target Genre: "{target_genre}"
+
+# Task: Direct use of original text without feature extraction.
+
+## Instructions:
+This is the direct use scenario where we skip feature extraction entirely.
+Instead, we will directly use the original text and target genre to generate the final text.
+
+## Output Format:
+Provide your response as a valid JSON object with the following structure:
+```json
+{
+  "target_attributes": {
+    "function_purpose": "The primary purpose or function of the text",
+    "audience_context": "The target audience and context of the text",
+    "structure_organization": "The organizational structure of the text",
+    "strategy": "The rhetorical or communicative strategies used",
+    "conventions": "The conventions followed in the text",
+    "linguistic_features": {
+      "information_density": "high/medium/low",
+      "interactivity": "high/medium/low",
+      "emotion": "high/medium/low/neutral",
+      "tone": "formal/semi_formal/informal/etc."
+    }
+  }
+}
+```

@@ -1,0 +1,53 @@
+system:
+  version: "1.0.0"
+  log_level: "info"
+
+input_handler:
+  semantic_core_method: "option_b"  # option_a: direct text, option_b: structured, option_c: extract from original
+  attributes_method: "option_b"     # option_a: no attributes, option_b: extract from text
+
+attribute_manager:
+  dimensions:
+    function_purpose:
+      active: true
+      weight: 1.0
+    audience_context:
+      active: true
+      weight: 1.0
+    structure_organization:
+      active: true
+      weight: 1.0
+    strategy:
+      active: true
+      weight: 1.0
+    conventions:
+      active: true
+      weight: 1.0
+    linguistic_features:
+      active: true
+      weight: 1.0
+    adjustment:
+      active: true
+      weight: 0.5
+
+exploration_engine:
+  strategy: "strategy_2"  # strategy_1: genre priority, strategy_2: dimension transformation
+  num_plans: 3
+  evaluation:
+    consistency_weight: 0.3
+    feasibility_weight: 0.4
+    value_weight: 0.3
+    threshold: 0.6
+
+generation_engine:
+  llm_config:
+    base_url: "https://api.openai.com/v1"
+    llm_api_key: ""  # Will be overridden by environment variable or command-line argument
+    model: "gpt-4.1"
+    temperature: 1.0
+    max_tokens: 2000
+    top_p: 1.0
+    frequency_penalty: 0.0
+    presence_penalty: 0.0
+  post_processing: true
+  quality_threshold: 0.7

@@ -1,0 +1,6 @@
+background: "Mozilla Security Guidelines that provides a brief survey over common topics in web security" 
+
+role: "World best web security exam designer, Who can design a exam related to web security based on the text that satisfies the requirements of following."
+
+task_description: |
+  Generate high-quality multi-response multi-choice question(s) with four options to test the main subject of the provided text. These questions will be used for a exam that assert one's knowledge of web security.

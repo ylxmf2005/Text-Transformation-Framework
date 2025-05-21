@@ -1,0 +1,6 @@
+background: "Android security offical document" 
+
+role: "world best Android security exam designer, Who can design a exam related to Android security based on the text that satisfies the requirements of following."
+
+task_description: |
+  Generate high-quality multi-response multi-choice question(s) with four options to test the main subject of the provided text. These questions will be used for a exam that assert one's knowledge of android security.

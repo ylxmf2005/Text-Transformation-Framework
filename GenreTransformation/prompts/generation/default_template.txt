@@ -1,0 +1,31 @@
+# Task: Generate a text based on the provided semantic core, attributes, and instructions.
+
+## Semantic Core:
+{semantic_core}
+
+## Target Attributes:
+- Target Genre: "{target_genre}"
+- Function/Purpose: "{function_purpose}"
+- Audience/Context: "{audience_context}"
+- Structure/Organization: "{structure_organization}"
+- Strategy: "{strategy}"
+- Conventions: "{conventions}"
+- Linguistic Features:
+  - Information Density: "{information_density}"
+  - Interactivity: "{interactivity}"
+  - Formality: "{formality}"
+  - Tone: "{tone}"
+  - Sentiment: "{sentiment}"
+
+## Additional High-Level Instructions:
+{instruction}
+
+## Guidelines:
+1. Ensure the generated text preserves the semantic core (essential information)
+2. Adhere to all target attributes specified above
+3. Follow the high-level instructions for transformation
+4. Create a coherent, high-quality text that achieves the intended purpose
+5. Maintain appropriate style, tone, and structure for the target genre
+
+## Output:
+Generate a complete text that fulfills all the requirements above.

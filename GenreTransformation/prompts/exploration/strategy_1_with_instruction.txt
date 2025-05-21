@@ -1,0 +1,46 @@
+# Input:
+# - Semantic Core: "{semantic_core}"
+# - Original Attributes: "{original_attributes}"
+# - User Instruction: "{user_instruction}"
+# - Num Plans: {num_plans}
+
+# Task: Generate transformation plans using Strategy 1 (Genre and Instruction Priority).
+
+## Instructions:
+Based on the provided semantic core and original attributes, generate {num_plans} transformation plans.
+Each plan should include:
+1. A target genre that is suitable for the semantic core
+2. A high-level instruction for transforming the content
+3. Implicit target attributes based on the genre
+
+Consider the following genres:
+- news_article
+- blog_post
+- academic_paper
+- story
+- technical_manual
+- persuasive_essay
+
+## Output Format:
+Provide your plans as a valid JSON array with the following structure:
+```json
+[
+  {
+    "target_genre": "genre_name",
+    "instruction": "Detailed instruction for transformation",
+    "target_attributes": {
+      "function_purpose": "...",
+      "audience_context": "...",
+      "structure_organization": "...",
+      "strategy": "...",
+      "conventions": "...",
+      "linguistic_features": {
+        "information_density": "high/medium/low",
+        "interactivity": "high/medium/low",
+        "emotion": "high/medium/low/neutral",
+        "tone": "formal/semi_formal/informal/etc."
+      }
+    }
+  }
+]
+```

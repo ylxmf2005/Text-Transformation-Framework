@@ -1,0 +1,27 @@
+# Input:
+# - Semantic Core: "{semantic_core}"
+# - Original Attributes: "{original_attributes}"
+# - User Instruction: "{user_instruction}"
+# - Transformation Plan: "{plan}"
+
+# Task: Evaluate the following transformation plan.
+
+## Evaluation Criteria:
+1. Consistency (0.0-1.0): How well the plan maintains the semantic core while transforming the text
+2. Feasibility (0.0-1.0): How practical and achievable the transformation is
+3. Value (0.0-1.0): How much the transformation adds value or interest to the original content
+
+## Output Format:
+RESPOND ONLY WITH VALID JSON. Do not include any text, explanations, or markdown formatting (like ```) before or after the JSON.
+
+Example output structure:
+{
+  "consistency_score": 0.0-1.0,
+  "consistency_rationale": "Explanation of consistency score",
+  "feasibility_score": 0.0-1.0,
+  "feasibility_rationale": "Explanation of feasibility score",
+  "value_score": 0.0-1.0,
+  "value_rationale": "Explanation of value score",
+  "overall_score": 0.0-1.0,
+  "recommendation": "Overall recommendation"
+}

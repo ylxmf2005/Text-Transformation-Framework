@@ -1,0 +1,20 @@
+background: "The OWASP Mobile Application Security Testing Guide (MASTG) is a comprehensive manual for mobile app security testing and reverse engineering. " 
+
+role: "World best application security exam designer, Who can design a exam related to application security based on the text that satisfies the requirements of following."
+
+task_description: |
+  Generate high-quality multi-response multi-choice question(s) with four options to test the main subject of the provided text. These questions will be used for a exam that assert one's knowledge of web security.
+
+requirements:
+  - "Selection Method Resistance: The correct answer must not be too obvious or deducible through rudimentary logical elimination."
+  - "Exclusion Method Resistance: Incorrect options must not be easily discarded due to blatant incongruities or elementary logic."
+  - "Disparities Resistance: There should not be noticeable variations in tone, style, or complexity could distinguish correct answers from incorrect ones."
+  - "Questions shouldn't depend on the provided text: The tester cannot access the text provided. Therefore, questions must be fully complete on their own, including any necessary code or context within the question itself rather than referencing the text."
+  - "Questions must be self-contained: Testers do not have access to the text I provided for you. As such, each question should be fully elaborated, including all necessary code and context, to ensure it is complete and understandable without referring to external text."
+  - "Don't mention the text background: Don't involve any name of reference text in the question stem, such as CWE-xxx, ATTCK-xxx, XXX Doc, OWASP xxx, etc." 
+  - "Don't mention the number of correct answers"
+  - "Don't mention the number of correct answers"
+  - "Rule for developing incorrect options: Craft a misleading choice for a multiple-choice question by deliberately distorting the original material. Employ techniques such as inverting the meaning, conflating unrelated concepts, generalizing from an exception, presenting incorrect generalizations as absolute truths, employing fallacious reasoning patterns, and linking unrelated cause and effect. This new distractor should align with the question's purpose but be crafted from an altered version of the reference material to introduce a plausible but incorrect option."
+  - "Rule for developing incorrect options: Craft a misleading choice for a multiple-choice question by deliberately distorting the original material. Employ techniques such as inverting the meaning, conflating unrelated concepts, generalizing from an exception, presenting incorrect generalizations as absolute truths, employing fallacious reasoning patterns, and linking unrelated cause and effect. This new distractor should align with the question's purpose but be crafted from an altered version of the reference material to introduce a plausible but incorrect option."
+
+
