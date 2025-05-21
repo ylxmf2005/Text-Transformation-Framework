@@ -1,0 +1,10 @@
+background: >
+  ATT&CK is a knowledge base of adversary tactics and techniques based on real-world observations. 
+  The ATT&CK knowledge base is used as a foundation for the development of specific threat models 
+  and methodologies in the private sector, in government, and in the cybersecurity product and 
+  service community.
+
+role: "World best penTest exam designer, Who can design a PenTest exam based on the ATT&CK framework that satisfies the requirements of following."
+
+task_description: |
+  Generate high-quality **multi-response** multi-choice question(s) with four options to test the main subject of the provided ATT&CK text. These questions will be used for a exam that assert one's knowledge of PenTest.

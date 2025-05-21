@@ -1,0 +1,22 @@
+# Input:
+# - Semantic Core: "{semantic_core}"
+# - Target Attributes: "{target_attributes}"
+# - Instruction: "{instruction}"
+# - Current Text: "{text}"
+# - Quality Issues: "{quality_issues}"
+
+# Task: Refine the following text to improve its quality.
+
+## Areas for Improvement:
+{improvements}
+
+## Instructions:
+Generate an improved version of the text that addresses these issues while maintaining the original intent.
+Focus on:
+1. Preserving the semantic core information
+2. Adhering to the target attributes
+3. Following the provided instruction
+4. Improving overall fluency, coherence, and readability
+
+## Output:
+Provide a refined version of the text that addresses all the identified issues.

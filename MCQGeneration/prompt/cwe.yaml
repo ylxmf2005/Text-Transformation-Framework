@@ -1,0 +1,6 @@
+background: Common Weakness Enumeration (CWE™) is a community-developed list of common software and hardware weakness types that have security ramifications. A “weakness” is a condition in a software, firmware, hardware, or service component that, under certain circumstances, could contribute to the introduction of vulnerabilities. The CWE List and associated classification taxonomy serve as a language that can be used to identify and describe these weaknesses in terms of CWEs. 
+
+role: "World best vulberibility exam designer, Who can design a exam  related to vulberibility based on the CWE framework that satisfies the requirements of following."
+
+task_description: |
+  Generate high-quality multi-response multi-choice question(s) with four options to test the main subject of the provided CWE text. These questions will be used for a exam that assert one's knowledge of Vulnerability.

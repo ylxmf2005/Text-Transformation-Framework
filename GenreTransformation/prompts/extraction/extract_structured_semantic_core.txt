@@ -1,0 +1,44 @@
+# Input:
+# - Original Text: "{original_text}"
+
+# Task: Extract structured semantic core from the provided text.
+
+## Instructions:
+Extract the essential semantic information from the text in a structured format, including:
+1. A neutral summary of the main content
+2. Key entities mentioned in the text
+3. Important events or states described
+4. Core propositions or claims made
+
+## Output Format:
+Provide your response as a valid JSON object with the following structure:
+```json
+{
+  "main_summary_neutral": "A concise, neutral summary of the text",
+  "identified_entities": [
+    {
+      "entity_name": "Name of entity",
+      "entity_type": "Type of entity (PERSON, ORGANIZATION, LOCATION, etc.)",
+      "description_and_key_attributes": "Brief description of the entity"
+    }
+  ],
+  "key_events_or_states": [
+    {
+      "event_description_neutral": "Description of the event or state",
+      "event_type": "Type of event (ACTION, STATEMENT, TRANSFORMATION, etc.)",
+      "involved_participants": [
+        {
+          "entity_name": "Name of participant",
+          "role_in_event": "Role in the event (AGENT, PATIENT, LOCATION, etc.)"
+        }
+      ]
+    }
+  ],
+  "core_propositions_or_claims": [
+    {
+      "proposition_statement_neutral": "Statement of the proposition or claim",
+      "proposition_type": "Type of proposition (FACT, OPINION, PREDICTION, etc.)"
+    }
+  ]
+}
+```

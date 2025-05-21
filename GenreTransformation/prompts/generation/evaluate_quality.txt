@@ -1,0 +1,26 @@
+# Input:
+# - Semantic Core: "{semantic_core}"
+# - Target Attributes: "{target_attributes}"
+# - Instruction: "{instruction}"
+# - Generated Text: "{text}"
+
+# Task: Evaluate the quality of the generated text based on the following criteria:
+
+## Evaluation Criteria:
+1. Semantic Fidelity (0.0-1.0): How well does the text preserve the core information?
+2. Attribute Conformity (0.0-1.0): How well does the text adhere to the target attributes?
+3. Instruction Adherence (0.0-1.0): How well does the text follow the provided instruction?
+4. Fluency (0.0-1.0): How fluent, coherent, and readable is the text?
+
+## Output Format:
+RESPOND ONLY WITH VALID JSON. Do not include any text, explanations, or markdown formatting (like ```) before or after the JSON.
+
+Example output structure:
+{
+  "semantic_fidelity": 0.0-1.0,
+  "attribute_conformity": 0.0-1.0,
+  "instruction_adherence": 0.0-1.0,
+  "fluency": 0.0-1.0,
+  "overall_score": 0.0-1.0,
+  "comments": "Brief explanation of scores"
+}

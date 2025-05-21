@@ -1,0 +1,96 @@
+
+background: "A Text related to cybersecurity"
+
+role: "world best cybersecurity exam designer, who can design a cybersecurity exam questions based on the text material."
+
+task_description: "Generate high-quality **multi-response** multi-choice question(s) with four options to test the main subject of the provided cybersecurity text material. These questions will be used for a exam that assert one's knowledge of cybersecurity."
+
+requirements:
+  - "Selection Method Resistance: The correct answer must not be too obvious or deducible through rudimentary logical elimination."
+  - "Exclusion Method Resistance: Incorrect options must not be easily discarded due to blatant incongruities or elementary logic."
+  - "Disparities Resistance: There should not be noticeable variations in tone, style, or complexity could distinguish correct answers from incorrect ones."
+  - "Questions shouldn't depend on the provided Text: The tester cannot access the text provided. Therefore, questions must be fully complete on their own, including any necessary code or context within the question itself rather than referencing the text."
+  - "Don't mention the text background: Don't involve any name of reference text in the question stem, such as CWE-xxx, ATTCK-xxx, XXX Doc, OWASP xxx, etc." 
+  - "Don't mention the number of correct answers"
+  - "Rule for developing incorrect options: Craft a misleading choice for a multiple-choice question by deliberately distorting the original material. Employ techniques such as inverting the meaning, conflating unrelated concepts, generalizing from an exception, presenting incorrect generalizations as absolute truths, employing fallacious reasoning patterns, and linking unrelated cause and effect. This new distractor should align with the question's purpose but be crafted from an altered version of the reference material to introduce a plausible but incorrect option."
+
+
+
+examination_focus:
+  - "Problem-Solving: Employing logic and creativity to tackle challenges and devise workable solutions within specified topics."
+  - "Critical Analysis: Dissecting arguments and evidence to assess their validity and relevance in a given context."
+  - "Conceptual Understanding: Grasping the underlying principles and theories that govern the topic at hand."
+  - "Applied Scenarios: Constructing questions based on real-life situations where respondents must choose the most appropriate application of knowledge."
+  - "Applied Code Examples: Providing code snippets or examples and asking for the identification of specific vulnerabilities or weaknesses." 
+  - "Applied Design Examples: Providing design diagrams or examples and asking for the identification of specific vulnerabilities or weaknesses."
+
+
+
+examination_forms:
+  - "Rule Application: Creating items that require the selection of theoretical principles applied to a practical situation."
+  - "Case Study Evaluation: Providing a comprehensive case study and asking for an analysis of the elements involved to come to a well-informed conclusion."
+  - "Reversed Logic: Crafting questions that reverse the question stem and choices, for example, For applied code examples, provide a vulnerability or weakness and ask for the identification of a code example that would/would not prevent it."
+  - "Causality Questions: Crafting 'Why does...' items that demand an understanding of cause-and-effect relationships."
+  - "Cons & Pros Questions: Crafting queries that require examinees to identify and articulate both advantages and disadvantages of a particular subject, policy, or decision."
+  - "Counterargument Selection: Developing 'Why not...' questions that challenge students to choose the best counterargument to a provided claim."
+
+
+
+text: ""
+
+
+output_format: |
+  A json array with the following format contain **2** element, must be a valid json array!!!!:
+  [{
+    "examination_focus": ["",""],
+    "examination_forms": ["",""],
+    "idea": /*Explain how you conbine examination focus and examination forms to generate the problem, and descrbie why the answer cannot be inferred by common sense or straightforward logic.*/,
+    "question_description": "",
+    "choices": {
+      "A": "",
+      "B": "",
+      "C": "",
+      "D": ""
+    },
+    "choices_citation": {
+      "A": /*If the choice is correct, provide the corresponding text citation. If the choice is incorrect, furnish the text citation and Chain of Thoughts that demonstrates its inaccuracy.*/,
+      "B": /*If the choice is correct, provide the corresponding text citation. If the choice is incorrect, furnish the text citation and Chain of Thoughts that demonstrates its inaccuracy.*/,
+      "C": /*If the choice is correct, provide the corresponding text citation. If the choice is incorrect, furnish the text citation and Chain of Thoughts that demonstrates its inaccuracy.*/,
+      "D": /*If the choice is correct, provide the corresponding text citation. If the choice is incorrect, furnish the text citation and Chain of Thoughts that demonstrates its inaccuracy.*/
+    },
+    "correct_answers": ["","",],
+    //TopicType: [SoftwareSecurity, SystemSecurity, ApplicationSecurity, Cryptographic, Vulneribility, WebSecurity, PenTest, MemorySafety, NetworkSecurity]
+    "topic": /*Dict[TopicType,str], provide the topics that directly related to the question, indirect relation is not considered*/{
+      "/*a topic name from TopicType*/": "resaon why you think this question is related to this topic",
+    }
+    "technical_keyword" : {//Please supply a highly specific and detailed technical term that is directly relevant to the question.
+      "/*fine-grained keyword*/": "reason why you think this question is related to this topic",
+    }
+
+  },
+  ]
+# if you don't want to use the default template, you can define your own template here
+system_prompt_template: | 
+    You are a {role}.  Your task is to {task_description} based on provided text.
+    During the generation process, please pay attention to the following points:
+    **examination_focus**:
+    - {examination_focus}
+    **examination_forms**:
+    - {examination_forms}
+    And the output format should be:
+    {output_format}
+user_prompt_template: |
+    The background of the following text is {background}.
+
+    **Text Reference**:  
+    ```markdown
+        {text}
+    ```
+    please generate questions based on the above text, utilize the text as a basis for questions.
+    You must follow the following requirements to generate questions:
+    **Requirements**:
+    - {requirements}
+
+    If it is difficult to generate questions that statisfy the selection method resistacne , exclusion method resistacne, disparities resistacne only based on the text provided, you can make up fake fact to generate wrong choices.
+    Note that, except you choose to make up a fake fact, all the revision options and questions should explicitly cite the reference text.
+    Note that, except you choose to make up a fake fact, all the revision options and questions should explicitly cite the reference text.

@@ -1,0 +1,35 @@
+# Input:
+# - Source Text: "{source_text}"
+
+# Task: Extract the original attributes from the provided source text.
+
+## Instructions:
+Analyze the text and identify its attributes across the following dimensions:
+1. Function/Purpose: The primary purpose or function of the text (narrative, descriptive, expository, argumentative, instructional)
+2. Audience/Context: The target audience and context of the text
+3. Structure/Organization: The organizational structure of the text (chronological, thematic, comparative, problem-solution, etc.)
+4. Strategy: The rhetorical or communicative strategies used
+5. Conventions: The conventions followed in the text
+6. Linguistic Features:
+   - Information Density: The density of information in the text (high, medium, low)
+   - Interactivity: The degree of interaction with the reader (high, medium, low)
+   - Emotion: The emotional content of the text (high, medium, low, neutral)
+   - Tone: The tone of the text (formal, semi-formal, informal, etc.)
+
+## Output Format:
+Provide your analysis as a valid JSON object with the following structure:
+```json
+{
+  "function_purpose": "The primary purpose or function of the text",
+  "audience_context": "The target audience and context of the text",
+  "structure_organization": "The organizational structure of the text",
+  "strategy": "The rhetorical or communicative strategies used",
+  "conventions": "The conventions followed in the text",
+  "linguistic_features": {
+    "information_density": "high/medium/low",
+    "interactivity": "high/medium/low",
+    "emotion": "high/medium/low/neutral",
+    "tone": "formal/semi_formal/informal/etc."
+  }
+}
+```

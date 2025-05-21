@@ -1,0 +1,50 @@
+# Input:
+# - Semantic Core: "{semantic_core}"
+# - Original Attributes: "{original_attributes}"
+# - User Instruction: "{user_instruction}"
+# - Num Plans: {num_plans}
+
+# Task: Generate transformation plans using Strategy 2 (Explicit Dimension Transformation).
+
+## Instructions:
+Based on the provided semantic core and original attributes, generate {num_plans} transformation plans.
+Each plan should include:
+1. A target genre that is suitable for the semantic core
+2. Explicit target attributes that define the transformation
+3. A high-level instruction for transforming the content
+
+Consider the following dimensions for transformation:
+- Function/Purpose: narrative, descriptive, expository, argumentative, instructional
+- Audience/Context: general_public, expert_academic, professional, children_youth
+- Structure/Organization: chronological, thematic, comparative, problem_solution
+- Strategy: logical_appeal, emotional_appeal, direct_address, storytelling
+- Conventions: genre_structure, citation_reference, formatting
+- Linguistic Features:
+  - Information Density: high, medium, low
+  - Interactivity: high, medium, low
+  - Emotion: high, medium, low, neutral
+  - Tone: formal, semi_formal, informal, persuasive, objective
+
+## Output Format:
+Provide your plans as a valid JSON array with the following structure:
+```json
+[
+  {
+    "target_genre": "genre_name",
+    "target_attributes": {
+      "function_purpose": "...",
+      "audience_context": "...",
+      "structure_organization": "...",
+      "strategy": "...",
+      "conventions": "...",
+      "linguistic_features": {
+        "information_density": "high/medium/low",
+        "interactivity": "high/medium/low",
+        "emotion": "high/medium/low/neutral",
+        "tone": "formal/semi_formal/informal/etc."
+      }
+    },
+    "instruction": "Detailed instruction for transformation"
+  }
+]
+```

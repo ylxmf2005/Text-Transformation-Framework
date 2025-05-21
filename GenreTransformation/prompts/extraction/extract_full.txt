@@ -1,0 +1,56 @@
+# Input:
+# - Original Text: "{original_text}"
+
+# Task: Extract both semantic core and original attributes from the provided text.
+
+## Instructions:
+1. Extract the semantic core (essential information content)
+2. Identify the original attributes (characteristics of the text)
+
+## Output Format:
+Provide your response as a valid JSON object with the following structure:
+```json
+{
+  "semantic_core": {
+    "main_summary_neutral": "A concise, neutral summary of the text",
+    "identified_entities": [
+      {
+        "entity_name": "Name of entity",
+        "entity_type": "Type of entity",
+        "description_and_key_attributes": "Brief description of the entity"
+      }
+    ],
+    "key_events_or_states": [
+      {
+        "event_description_neutral": "Description of the event or state",
+        "event_type": "Type of event",
+        "involved_participants": [
+          {
+            "entity_name": "Name of participant",
+            "role_in_event": "Role in the event"
+          }
+        ]
+      }
+    ],
+    "core_propositions_or_claims": [
+      {
+        "proposition_statement_neutral": "Statement of the proposition or claim",
+        "proposition_type": "Type of proposition"
+      }
+    ]
+  },
+  "original_attributes": {
+    "function_purpose": "The primary purpose or function of the text",
+    "audience_context": "The target audience and context of the text",
+    "structure_organization": "The organizational structure of the text",
+    "strategy": "The rhetorical or communicative strategies used",
+    "conventions": "The conventions followed in the text",
+    "linguistic_features": {
+      "information_density": "high/medium/low",
+      "interactivity": "high/medium/low",
+      "emotion": "high/medium/low/neutral",
+      "tone": "formal/semi_formal/informal/etc."
+    }
+  }
+}
+```
